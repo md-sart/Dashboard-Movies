@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Filmes</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciador de Filmes</h1>
+    </header>
+    <main class="container">
+        <!-- Formulários estilizados -->
+        <section class="actions">
+            <form id="dadosForm" class="card">
+                <h2>Adicionar Filme</h2>
+                <label for="nome">Nome do Filme:</label>
+                <input type="text" id="nome" name="nome" required>
+                <label for="ano">Ano de Lançamento:</label>
+                <input type="number" id="ano" name="ano" required>
+                <button type="submit">Adicionar</button>
+            </form>
+            <form id="editarForm" class="card">
+                <h2>Editar Filme</h2>
+                <label for="editObjectId">ID do Filme:</label>
+                <input type="text" id="editObjectId" name="objectId" required>
+                <label for="editNome">Nome do Filme:</label>
+                <input type="text" id="editNome" name="nome">
+                <label for="editAno">Ano de Lançamento:</label>
+                <input type="number" id="editAno" name="ano">
+                <button type="submit">Editar</button>
+            </form>
+            <form id="deletarForm" class="card">
+                <h2>Deletar Filme</h2>
+                <label for="deleteObjectId">ID do Filme:</label>
+                <input type="text" id="deleteObjectId" name="deleteObjectId" required>
+                <button type="submit">Deletar</button>
+            </form>
+        </section>
+        
+        <!-- Gráficos -->
+        <section class="charts">
+            <div class="chart-item">
+                <canvas id="chartGenero"></canvas>
+            </div>
+            <div class="chart-item">
+                <canvas id="chartPais"></canvas>
+            </div>
+            <div class="chart-item full-width">
+                <canvas id="chartScore"></canvas>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Gerenciador de Filmes</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
