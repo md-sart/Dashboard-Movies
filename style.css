@@ -92,7 +92,7 @@ main {
 }
 
 .card button {
-    background-color: #5cb85c;
+    background-color: #333;
     color: #fff;
     font-weight: bold;
     cursor: pointer;
@@ -168,7 +168,7 @@ main {
 }
 
 .card button:hover {
-    background-color: #4cae4c;
+    background-color: gray;
     transform: scale(1.05);
 }
 
